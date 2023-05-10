@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  padding-top: 70px;
+  margin-bottom: 0px;
+  background-color: #f7f7f7;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+h2 {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.btn {
+  border: 0;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #294d5c;
+  transition: all 0.15s;
+}
+.btn:hover {
+  outline: none;
+  background-color: #5f9db8;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+  box-shadow: 0 0 0 2px #404b61, inset 0 0 0 2px #ffffff;
+}
+.btn:active {
+  transform: scale(0.95);
+  background-color: #294d5c;
+}
+
+#loading {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-banner:hover {
+  background-color: #ffffff;
+}
+#btnDelete {
+  background-color: #e7380c;
+}
+
+#btnDelete:hover {
+  background-color: #e96949;
+}
+
+#btnEdit,
+#btnAddPhone,
+#btnUpdate {
+  background-color: #4d8c5c;
+  transition: all .5s;
+}
+
+#btnEdit:hover,
+#btnAddPhone:hover,
+#btnUpdate:hover {
+  background-color: #0a581b;
+}
+
+main {
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main-color {
+  background: #2c5364;
+}
+
+.gradient-custom {
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+}
+
+header #navbarColor01 a {
+  transition: 0.3s all ease-in-out;
+}
+
+header #navbarColor01 a:hover {
+  transform: scale(1.15);
+}
+.black {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.phoneBanner {
+  background-color: rgba(29, 38, 113, 0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+
+.modal-title{
+  font-family: "Playfair Display", serif;
+  font-size: 210%;
+  color: #3e403f;
+}
+.input-group-text{
+  padding: 0.7rem 0.75rem;
+}
+
+.modal-body{
+  padding: 2rem;
+}
+
+/* td img{
+
+} */
+td .pic{
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 1199.5px) {
+  /* .card {
+      height: 600px;
+    } */
+}
+@media (max-width: 991.5px) {
+  /* .card {
+      height: 550px;
+    } */
+  .card span {
+    font-size: 1.1rem;
+  }
+  #selectList {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 525.5px) {
+  #content.my-5 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .col-lg-4,
+  .col-md-6 {
+    padding-left: 0;
+  }
+
+  #selectList {
+    width: 100% !important;
+  }
+}
